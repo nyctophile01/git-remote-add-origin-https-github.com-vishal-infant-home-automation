@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/hello",
+      "methods": ["GET"],
+      "dest": "/api/hello.ts"
+    },
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    }
+  ],
+  "functions": {
+    "api/hello.ts": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
+}
